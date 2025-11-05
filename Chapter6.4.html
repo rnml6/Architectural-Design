@@ -8,773 +8,568 @@
   </head>
 
   <body>
-    <header>
-      <center>
-        <h1><a href="homepage.html">CHAPTER 6</a></h1>
-        <h2>Architectural Design</h2>
-        <button><a href="chapter_6-1.html">Chapter 6.1</a></button>
-        <button><a href="6.2.html">Chapter 6.2</a></button>
-        <button><a href="Chapter6_3.html">Chapter 6.3</a></button>
-        <button><a href="Chapter6.4.html">Chapter 6.4</a></button>
-      </center>
+    <header class="homepage-header">
+      <div class="header-h1">
+        <a href="homepage.html">
+          <img
+            class="h-11 max-[585px]:h-9"
+            src="/src/assets/img/logo.png"
+            alt="haha"
+          />
+        </a>
+        <a href="homepage.html">
+          <h1 class="pt-1.5 max-[730px]:hidden">Chapter 6</h1>
+        </a>
+      </div>
+
+      <nav class="max-[1140px]:hidden">
+        <button class="header-button">
+          <a href="chapter_6-1.html">Architectural Design Decisions</a>
+        </button>
+        <button class="header-button">
+          <a href="6.2.html">Architectural Views</a>
+        </button>
+        <button class="header-button">
+          <a href="Chapter6_3.html">Architectural Patterns</a>
+        </button>
+        <button class="header-button">
+          <a href="Chapter6.4.html">Application Architectures</a>
+        </button>
+      </nav>
+
+      <nav class="min-[1140px]:hidden max-[585px]:hidden">
+        <button class="header-button">
+          <a href="chapter_6-1.html">Decisions</a>
+        </button>
+        <button class="header-button">
+          <a href="6.2.html">Views</a>
+        </button>
+        <button class="header-button">
+          <a href="Chapter6_3.html">Patterns</a>
+        </button>
+        <button class="header-button">
+          <a href="Chapter6.4.html">Application</a>
+        </button>
+      </nav>
+
+      <nav class="min-[585px]:hidden text-md font-quano">
+        <button class="header-button">
+          <a href="chapter_6-1.html">6.1</a>
+        </button>
+        <button class="header-button">
+          <a href="6.2.html">6.2</a>
+        </button>
+        <button class="header-button">
+          <a href="Chapter6_3.html">6.3</a>
+        </button>
+        <button class="header-button">
+          <a href="Chapter6.4.html">6.4</a>
+        </button>
+      </nav>
     </header>
 
-    <div id=" info1">
-      <section>
+
+    <main class="chapter_6-4_main">
+
+
+      <div class="chapter_6-4_div1">
         <h2>Application architectures</h2>
+        <div>
+          Application systems are intended to meet a business or organizational need. All businesses have much in common—they need to hire people, issue invoices, keep accounts, and so on. Businesses operating in the same sector use common sector-specific applications. Therefore, as well as general business functions, all phone companies need systems to connect calls, manage their network, issue bills to customers, etc. Consequently, the application systems used by these businesses also have much in common. These commonalities have led to the development of software architectures that describe the structure and organization of particular types of software systems. Application architectures encapsulate the principal characteristics of a class of systems. For example, in real-time systems, there might be generic architectural models of different system types, such as data collection systems or monitoring systems. Although instances of these systems differ in detail, the common architectural structure can be reused when developing new systems of the same type. The application architecture may be re-implemented when developing new systems but, for many business systems, application reuse is possible without re-implementation. We see this in the growth of Enterprise Resource Planning (ERP) systems from companies such as SAP and Oracle, and vertical software packages (COTS) for specialized applications in different areas of business. In these systems, a generic system is configured and adapted to create a specific business application.
+        </div>
+      </div>
 
-        <article>
-          Application systems are intended to meet a business or organizational
-          need. All business <br />
-          have much in common—they need to hire people, issue invoices, keep
-          <br />
-          accounts, and so on. Businesses operating in the same sector use
-          common sector <br />
-          specific applications. Therefore, as well as general business
-          functions, all phone <br />
-          companies need systems to connect calls, manage their network, issue
-          bills to <br />
-          customers, etc. Consequently, the application systems used by these
-          businesses also <br />
-          have much in common. <br />
-          These commonalities have led to the development of software
-          architectures <br />
-          that describe the structure and organization of particular types of
-          software sys <br />
-          tems. Application architectures encapsulate the principal
-          characteristics of a <br />
-          class of systems. For example, in real-time systems, there might be
-          generic archi <br />
-          tectural models of different system types, such as data collection
-          systems or <br />
-          monitoring systems. Although instances of these systems differ in
-          detail, the <br />
-          common architectural structure can be reused when developing new
-          systems of <br />
-          the same type. <br />
-          The application architecture may be re-implemented when developing new
-          <br />
-          systems but, for many business systems, application reuse is possible
-          without re- <br />
-          implementation. We see this in the growth of Enterprise Resource
-          Planning (ERP) <br />
-          systems from companies such as SAP and Oracle, and vertical software
-          packages <br />
-          (COTS) for specialized applications in different areas of business. In
-          these systems, <br />
-          a generic system is configured and adapted to create a specific
-          business application. <br />
-        </article>
-        <br />
+    </main>
 
-        <article>
-          <p>
-            <img src="src/assets/img/mouse (2).png" alt="" />
-            <a> Application architectures </a> <br />
-            There are several examples of application architectures on the
-            book’s website. These include descriptions of
-            <br />
-            batch data-processing systems, resource allocation systems, and
-            event-based editing systems. <br />
 
-            <a
-              href="http://www.SoftwareEngineering-9.com/Web/Architecture/AppArch/"
-            >
-              <b
-                >http://www.SoftwareEngineering-9.com/Web/Architecture/AppArch/</b
-              ></a
-            >
-          </p>
-        </article>
+   <div class="flex justify-center items-center min-h-screen px-4 sm:px-6 lg:px-12">
+  <div class="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 grid-rows-6 gap-2 items-stretch w-full max-w-screen-2xl">
 
-        <article>
-          <p>
-            For example, a system for supply chain management can be adapted for
-            different <br />
-            types of suppliers, goods, and contractual arrangements. <br />
-            As a software designer, you can use models of application
-            architectures in a num <br />
-            ber of ways: <br />
-          </p>
+    <!-- Div 1 -->
+    <label class="relative cursor-pointer h-full col-span-1 sm:col-span-1 md:col-span-1 lg:col-start-3">
+      <input type="checkbox" class="peer hidden" />
+      <div class="p-4 h-full rounded bg-white text-black text-sm text-center transform transition duration-500 ease-in-out hover:bg-blue-100 hover:shadow-lg peer-checked:rotate-180 peer-checked:bg-blue-500 peer-checked:text-transparent">
+        Application architecture
+      </div>
+    </label>
 
-          <p>
-            1. As a starting point for the architectural design process If you
-            are unfamiliar with <br />
-            the type of application that you are developing, you can base your
-            initial design <br />
-            on a generic application architecture. Of course, this will have to
-            be specialized <br />
-            for the specific system being developed, but it is a good starting
-            point for design. <br />
-            2. As a design checklist If you have developed an architectural
-            design for an appli <br />
-            cation system, you can compare this with the generic application
-            architecture. <br />
-            You can check that your design is consistent with the generic
-            architecture. <br />
-            3. As a way of organizing the work of the development team The
-            application archi <br />
-            tectures identify stable structural features of the system
-            architectures and in <br />
-            many cases, it is possible to develop these in parallel. You can
-            assign work to <br />
-            group members to implement different components within the
-            architecture. <br />
-            4. As a means of assessing components for reuse If you have
-            components you <br />
-            might be able to reuse, you can compare these with the generic
-            structures to see <br />
-            whether there are comparable components in the application
-            architecture. <br />
-            5. As a vocabulary for talking about types of applications If you
-            are discussing a spe <br />
-            cific application or trying to compare applications of the same
-            types, then you can <br />
-            use the concepts identified in the generic architecture to talk
-            about the applications. <br />
-          </p>
+    <!-- Div 2 -->
+    <label class="relative cursor-pointer h-full col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-5 xl:col-span-6 row-start-2">
+      <input type="checkbox" class="peer hidden" />
+      <div class="p-4 h-full rounded bg-white text-black text-sm text-center transform transition duration-500 ease-in-out hover:bg-blue-100 hover:shadow-lg peer-checked:rotate-180 peer-checked:bg-blue-500 peer-checked:text-transparent">
+        There are several examples of application architectures on the book’s website. These include descriptions of batch data-processing systems, resource allocation systems, and event-based editing systems.<br>
+        <a href="http://www.SoftwareEngineering-9.com/Web/Architecture/AppArch/" class="m-0 p-0">
+          <b>http://www.SoftwareEngineering-9.com/Web/Architecture/AppArch/</b>
+        </a><br>
+        For example, a system for supply chain management can be adapted for different types of suppliers, goods, and contractual arrangements.<br>
+        As a software designer, you can use models of application architectures in a number of ways:
+      </div>
+    </label>
 
-          <p>
-            There are many types of application system and, in some cases, they
-            may seem to <br />
-            be very different. However, many of these superficially dissimilar
-            applications actu <br />
-            ally have much in common, and thus can be represented by a single
-            abstract applica <br />
-            tion architecture. We illustrate this here by describing the
-            following architectures of <br />
-            two types of application: <br />
-          </p>
-          1. Transaction processing applications Transaction processing
-          applications are <br />
-          database-centered applications that process user requests for
-          information and <br />
-          update the information in a database. These are the most common type
-          of inter <br />
-          active business systems. They are organized in such a way that user
-          actions can’t <br />
-          interfere with each other and the integrity of the database is
-          maintained. This <br />
+    <!-- Divs 3 to 7 -->
+    <label class="relative cursor-pointer h-full row-start-3 row-span-2 col-span-1">
+      <input type="checkbox" class="peer hidden" />
+      <div class="p-4 h-full rounded bg-white text-black text-sm text-center transform transition duration-500 ease-in-out hover:bg-blue-100 hover:shadow-lg peer-checked:rotate-180 peer-checked:bg-blue-500 peer-checked:text-transparent">
+        1. As a starting point for the architectural design process. If you are unfamiliar with the type of application you are developing, you can base your initial design on a generic application architecture. This will need to be specialized for the specific system being developed, but it is a good starting point.
+      </div>
+    </label>
 
-          <img src="src/assets/img/ggg.jpg" alt="" /> <br />
+    <label class="relative cursor-pointer h-full row-start-3 row-span-2 col-span-1">
+      <input type="checkbox" class="peer hidden" />
+      <div class="p-4 h-full rounded bg-white text-black text-sm text-center transform transition duration-500 ease-in-out hover:bg-blue-100 hover:shadow-lg peer-checked:rotate-180 peer-checked:bg-blue-500 peer-checked:text-transparent">
+        2. As a design checklist. If you have developed an architectural design for an application system, you can compare it with the generic application architecture to ensure consistency.
+      </div>
+    </label>
 
-          class of system includes interactive banking systems, e-commerce
-          systems, <br />
-          information systems, and booking systems. <br />
-          2. Language processing systems Language processing systems are systems
-          in <br />
-          which the user’s intentions are expressed in a formal language (such
-          as Java). <br />
-          The language processing system processes this language into an
-          internal format <br />
-          and then interprets this internal representation. The best-known
-          language pro <br />
-          cessing systems are compilers, which translate high-level language
-          programs <br />
-          into machine code. However, language processing systems are also used
-          to <br />
-          interpret command languages for databases and information systems, and
-          <br />
-          markup languages such as XML (Harold and Means, 2002; Hunter et al.,
-          2007). <br />
-          We have chosen these particular types of system because a large number
-          of web <br />
-          based business systems are transaction-processing systems, and all
-          software devel <br />
-          opment relies on language processing systems. <br />
-        </article>
-      </section>
+    <label class="relative cursor-pointer h-full row-start-3 row-span-2 col-span-1">
+      <input type="checkbox" class="peer hidden" />
+      <div class="p-4 h-full rounded bg-white text-black text-sm text-center transform transition duration-500 ease-in-out hover:bg-blue-100 hover:shadow-lg peer-checked:rotate-180 peer-checked:bg-blue-500 peer-checked:text-transparent">
+        3. As a way of organizing the work of the development team. The application architectures identify stable structural features of the system, which can often be developed in parallel. You can assign work to team members accordingly.
+      </div>
+    </label>
+
+    <label class="relative cursor-pointer h-full row-start-3 row-span-2 col-span-1">
+      <input type="checkbox" class="peer hidden" />
+      <div class="p-4 h-full rounded bg-white text-black text-sm text-center transform transition duration-500 ease-in-out hover:bg-blue-100 hover:shadow-lg peer-checked:rotate-180 peer-checked:bg-blue-500 peer-checked:text-transparent">
+        4. As a means of assessing components for reuse. If you have reusable components, you can compare them with the generic structures to identify compatibility.
+      </div>
+    </label>
+
+    <label class="relative cursor-pointer h-full row-start-3 row-span-2 col-span-1">
+      <input type="checkbox" class="peer hidden" />
+      <div class="p-4 h-full rounded bg-white text-black text-sm text-center transform transition duration-500 ease-in-out hover:bg-blue-100 hover:shadow-lg peer-checked:rotate-180 peer-checked:bg-blue-500 peer-checked:text-transparent">
+        5. As a vocabulary for discussing types of applications. When comparing or discussing specific applications, use the concepts from the generic architecture to guide the conversation.
+      </div>
+    </label>
+
+  </div>
+</div>
+
+
+
+
+
+
+<div class="px-4 py-8 max-w-7xl mx-auto bg-white">
+  <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center text-gray-800">
+    Abstract Application Architectures
+  </h2>
+
+  <p class="text-gray-700 mb-8 text-justify">
+    There are many types of application system and, in some cases, they may seem to be very different. However, many of these superficially dissimilar applications actually have much in common, and thus can be represented by a single abstract application architecture. We illustrate this here by describing the following architectures of two types of application:
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Card 1 -->
+    <div class="group bg-gray-100 rounded-lg p-6 shadow-md transition-all duration-300 hover:bg-blue-600 hover:text-white hover:shadow-xl hover:-translate-y-2">
+      <h3 class="text-xl font-semibold mb-4 group-hover:text-white">
+        1. Transaction Processing Applications
+        <img src="src/assets/img/ggg.jpg" alt="" /> <br />
+
+      </h3>
+      <p class="text-justify">
+        Transaction processing applications are database-centered applications that process user requests for information and update the information in a database. These are the most common type of interactive business systems. They are organized in such a way that user actions can’t interfere with each other and the integrity of the database is maintained.
+      </p>
+      <p class="mt-4 text-justify">
+        This class of system includes interactive banking systems, e-commerce systems, information systems, and booking systems.
+      </p>
     </div>
 
-    <section>
-      <div id="6.4.1 Transaction processing systems"></div>
-      <h2>6.4.1 Transaction processing systems</h2>
+    <!-- Card 2 -->
+    <div class="group bg-gray-100 rounded-lg p-6 shadow-md transition-all duration-300 hover:bg-blue-600 hover:text-white hover:shadow-xl hover:-translate-y-2">
+      <h3 class="text-xl font-semibold mb-4 group-hover:text-white">
+        2. Language Processing Systems
+      </h3>
+      <p class="text-justify">
+        Language processing systems are systems in which the user’s intentions are expressed in a formal language (such as Java). The language processing system processes this language into an internal format and then interprets this internal representation.
+      </p>
+      <p class="mt-4 text-justify">
+        The best-known language processing systems are compilers, which translate high-level language programs into machine code. However, language processing systems are also used to interpret command languages for databases and information systems, and markup languages such as XML (Harold and Means, 2002; Hunter et al., 2007).
+      </p>
+      <p class="mt-4 text-justify">
+        We have chosen these particular types of system because a large number of web-based business systems are transaction-processing systems, and all software development relies on language processing systems.
+      </p>
+    </div>
+  </div>
+</div>
 
-      <article>
-        Transaction processing (TP) systems are designed to process user
-        requests for infor <br />
-        mation from a database, or requests to update a database (Lewis et al.,
-        2003). <br />
-        Technically, a database transaction is sequence of operations that is
-        treated as a sin <br />
-        gle unit (an atomic unit). All of the operations in a transaction have
-        to be completed <br />
-        before the database changes are made permanent. This ensures that
-        failure of opera <br />
-        tions within the transaction does not lead to inconsistencies in the
-        database. <br />
-        From a user perspective, a transaction is any coherent sequence of
-        operations that <br />
-        satisfies a goal, such as ‘find the times of flights from London to
-        Paris’. If the user <br />
-        transaction does not require the database to be changed then it may not
-        be necessary <br />
-        to package this as a technical database transaction. <br />
-        An example of a transaction is a customer request to withdraw money from
-        a bank <br />
-        account using an ATM. This involves getting details of the customer’s
-        account, check <br />
-        ing the balance, modifying the balance by the amount withdrawn, and
-        sending com <br />
-        mands to the ATM to deliver the cash. Until all of these steps have been
-        completed, the <br />
-        transaction is incomplete and the customer accounts database is not
-        changed. <br />
-        Transaction processing systems are usually interactive systems in which
-        users <br />
-        make asynchronous requests for service. Figure 6.14 illustrates the
-        conceptual ar <br />
-        chitectural structure of TP applications. First a user makes a request
-        to the system <br />
-        through an I/O processing component. The request is processed by some
-        application <br />
-        specific logic. A transaction is created and passed to a transaction
-        manager, which is <br />
-        usually embedded in the database management system. After the
-        transaction manager <br />
-        <img src="src/assets/img/hhh.jpg" alt="" /> <br />
 
-        has ensured that the transaction is properly completed, it signals to
-        the application <br />
-        that processing has finished. <br />
-        Transaction processing systems may be organized as a ‘pipe and filter’
-        architec <br />
-        ture with system components responsible for input, processing, and
-        output. For <br />
-        example, consider a banking system that allows customers to query their
-        accounts <br />
-        and withdraw cash from an ATM. The system is composed of two cooperating
-        soft <br />
-        ware components—the ATM software and the account processing software in
-        the <br />
-        bank’s database server. The input and output components are implemented
-        as soft <br />
-        ware in the ATM and the processing component is part of the bank’s
-        database server. <br />
-        Figure 6.15 shows the architecture of this system, illustrating the
-        functions of the <br />
-        input, process, and output components. <br />
-      </article>
-    </section>
-    <section>
-      <div id="6.4.2 Information systems">
-        <h2>6.4.2 Information systems</h2>
 
-        <article>
-          <p>
-            All systems that involve interaction with a shared database can be
-            considered to be <br />
-            transaction-based information systems. An information system allows
-            controlled <br />
-            access to a large base of information, such as a library catalog, a
-            flight timetable, or <br />
-            the records of patients in a hospital. Increasingly, information
-            systems are web-based <br />
-            systems that are accessed through a web browser. <br />
-            Figure 6.16 a very general model of an information system. The
-            system is mod <br />
-            eled using a layered approach (discussed in Section 6.3) where the
-            top layer supports <br />
-            the user interface and the bottom layer is the system database. The
-            user communica <br />
-            tions layer handles all input and output from the user interface,
-            and the information <br />
-            retrieval layer includes application-specific logic for accessing
-            and updating the <br />
-            database. As we shall see later, the layers in this model can map
-            directly onto servers <br />
-            in an Internet-based system. <br />
-            As an example of an instantiation of this layered model, Figure 6.17
-            shows the <br />
-            architecture of the MHC-PMS. Recall that this system maintains and
-            manages details <br />
-            of patients who are consulting specialist doctors about mental
-            health problems. We have <br />
-          </p>
-          <p>
-            <img src="src/assets/img/iii.jpg" alt="" /> <br />
-            added detail to each layer in the model by identifying the
-            components that support <br />
-            user communications and information retrieval and access:
-          </p>
-          <p>
-            1. The top layer is responsible for implementing the user interface.
-            In this case, the <br />
-            UI has been implemented using a web browser. 2. The second layer
-            provides the user interface functionality that is delivered <br />
-            through the web browser. It includes components to allow users to
-            log in to the <br />
-            system and checking components that ensure that the operations they
-            use are <br />
-            allowed by their role. This layer includes form and menu management
-            compo <br />
-            nents that present information to users, and data validation
-            components that <br />
-            check information consistency. 3. The third layer implements the
-            functionality of the system and provides compo <br />
-            nents that implement system security, patient information creation
-            and updating, <br />
-            import and export of patient data from other databases, and report
-            generators <br />
-            that create management reports.
-          </p>
+<!----TRYYY-->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 bg-gray-50 text-gray-800 relative z-0">
+  <!-- Card 1 -->
+  <div class="relative h-full overflow-hidden transform-gpu will-change-transform transition duration-700 hover:skew-y-1 hover:-translate-y-2 hover:scale-105 hover:bg-blue-100 hover:text-gray-900 z-10 rounded shadow ring-1 ring-gray-200">
+    <div class="bg-white p-5 text-base md:text-lg leading-relaxed animate-[fadeIn_1s_ease-in-out]">
+      <h2 class="text-xl font-bold mb-4">6.4.1 Transaction Processing Systems</h2>
+      <p>
+        Transaction processing (TP) systems are designed to process user requests for information from a database, or requests to update a database (Lewis et al., 2003). Technically, a database transaction is a sequence of operations that is treated as a single unit (an atomic unit). All of the operations in a transaction have to be completed before the database changes are made permanent. This ensures that failure of operations within the transaction does not lead to inconsistencies in the database.
+      </p>
+    </div>
+  </div>
 
-          <img src="src/assets/img/bbb.jpg" alt="" />
+  <!-- Card 2 -->
+  <div class="relative h-full overflow-hidden transform-gpu will-change-transform transition duration-700 hover:skew-y-1 hover:-translate-y-2 hover:scale-105  hover:text-gray-900 z-10 rounded shadow ring-1 ring-gray-200">
+    <div class="bg-white p-5 text-base md:text-lg leading-relaxed animate-[fadeIn_1s_ease-in-out]">
+      <p>
+        From a user perspective, a transaction is any coherent sequence of operations that satisfies a goal, such as ‘find the times of flights from London to Paris’. If the user transaction does not require the database to be changed then it may not be necessary to package this as a technical database transaction.
+      </p>
+    </div>
+  </div>
 
-          <p>
-            4. Finally, the lowest layer, which is built using a commercial
-            database manage <br />
-            ment system, provides transaction management and persistent data
-            storage. Information and resource management systems are now usually
-            web-based systems <br />
-            where the user interfaces are implemented using a web browser. For
-            example, <br />
-            e-commerce systems are Internet-based resource management systems
-            that accept elec <br />
-            tronic orders for goods or services and then arrange delivery of
-            these goods or services <br />
-            to the customer. In an e-commerce system, the application-specific
-            layer includes addi <br />
-            tional functionality supporting a ‘shopping cart’ in which users can
-            place a number of <br />
-            items in separate transactions, then pay for them all together in a
-            single transaction. <br />
-            The organization of servers in these systems usually reflects the
-            four-layer <br />
-            generic model presented in Figure 6.16. These systems are often
-            implemented as <br />
-            multi-tier client server/architectures, as discussed in Chapter 18:
-            <br />
-            1. The web server is responsible for all user communications, with
-            the user inter <br />
-            face implemented using a web browser; 2. The application server is
-            responsible for implementing application-specific <br />
-            logic as well as information storage and retrieval requests; 3. The
-            database server moves information to and from the database and
-            handles <br />
-            transaction management. <br />
-            Using multiple servers allows high throughput and makes it possible
-            to handle <br />
-            hundreds of transactions per minute. As demand increases, servers
-            can be added at <br />
-            each level to cope with the extra processing involved. <br />
-          </p>
-        </article>
-      </div>
-    </section>
+  <!-- Card 3 -->
+  <div class="relative h-full overflow-hidden transform-gpu will-change-transform transition duration-700 hover:skew-y-1 hover:-translate-y-2 hover:scale-105  hover:text-gray-900 z-10 rounded shadow ring-1 ring-gray-200">
+    <div class="bg-white p-5 text-base md:text-lg leading-relaxed animate-[fadeIn_1s_ease-in-out]">
+      <p>
+        An example of a transaction is a customer request to withdraw money from a bank account using an ATM. This involves getting details of the customer’s account, checking the balance, modifying the balance by the amount withdrawn, and sending commands to the ATM to deliver the cash. Until all of these steps have been completed, the transaction is incomplete and the customer accounts database is not changed. Transaction processing systems are usually interactive systems in which users make asynchronous requests for service.
+      </p>
+    </div>
+  </div>
 
-    <section>
-      <div id="6.4.3 Language processing systems">
-        <h2>6.4.3 Language processing systems</h2>
+  <!-- Card 4 -->
+  <div class="relative h-full overflow-hidden transform-gpu will-change-transform transition duration-700 hover:skew-y-1 hover:-translate-y-2 hover:scale-105  hover:text-gray-900 z-10 rounded shadow ring-1 ring-gray-200">
+    <div class="bg-white p-5 text-base md:text-lg leading-relaxed animate-[fadeIn_1s_ease-in-out]">
+      <p>
+        Figure 6.14 illustrates the conceptual architectural structure of TP applications. First a user makes a request to the system through an I/O processing component. The request is processed by some application-specific logic. A transaction is created and passed to a transaction manager,<img src="src/assets/img/hhh.jpg" alt="" /> which is usually embedded in the database management system. After the transaction manager has ensured that the transaction is properly completed, it signals to the application that processing has finished.
+      </p>
+    </div>
+  </div>
 
-        <article>
-          Language processing systems translate a natural or artificial language
-          into another <br />
-          representation of that language and, for programming languages, may
-          also execute <br />
-          the resulting code. In software engineering, compilers translate an
-          artificial program <br />
-          ming language into machine code. Other language-processing systems may
-          translate <br />
-          an XML data description into commands to query a database or to an
-          alternative <br />
-          XML representation. Natural language processing systems may translate
-          one natural <br />
-          language to another e.g., French to Norwegian. <br />
-          A possible architecture for a language processing system for a
-          programming lan <br />
-          guage is illustrated in Figure 6.18. The source language instructions
-          define the pro <br />
-          gram to be executed and a translator converts these into instructions
-          for an abstract <br />
-          machine. These instructions are then interpreted by another component
-          that fetches <br />
-          the instructions for execution and executes them using (if necessary)
-          data from the <br />
-          environment. The output of the process is the result of interpreting
-          the instructions <br />
-          on the input data. <br />
+  <!-- Card 5 -->
+  <div class="relative h-full md:col-span-2 overflow-hidden transform-gpu will-change-transform transition duration-700 hover:skew-y-1 hover:-translate-y-2 hover:scale-105 hover:bg-blue-100 hover:text-gray-900 z-10 rounded shadow ring-1 ring-gray-200">
+    <div class="bg-white p-5 text-base md:text-lg leading-relaxed animate-[fadeIn_1s_ease-in-out]">
+      <p>
+        Transaction processing systems may be organized as a ‘pipe and filter’ architecture with system components responsible for input, processing, and output. For example, consider a banking system that allows customers to query their accounts and withdraw cash from an ATM. The system is composed of two cooperating software components—the ATM software and the account processing software in the bank’s database server. The input and output components are implemented as software in the ATM and the processing component is part of the bank’s database server.
+      </p>
+    </div>
+  </div>
 
-          <img src="src/assets/img/lll.jpg" alt="" />
+  <!-- Card 6 -->
+  <div class="relative h-full md:col-span-2 overflow-hidden transform-gpu will-change-transform transition duration-700 hover:skew-y-1 hover:-translate-y-2 hover:scale-105 hover:bg-blue-100 hover:text-gray-900 z-10 rounded shadow ring-1 ring-gray-200">
+    <div class="bg-white p-5 text-base md:text-lg leading-relaxed animate-[fadeIn_1s_ease-in-out]">
+      <p>
+        Figure 6.15 shows the architecture of this system, illustrating the functions of the input, process, and output components.
+      </p>
+    </div>
+  </div>
+</div>
 
-          <img src="src/assets/img/mouse (2).png" alt="" />
-          <a> References architectures </a> <br />
-          <p>
-            Reference architectures capture important features of system
-            architectures in a domain. Essentially, theyinclude <br />
-            everything that might be in an application architecture although, in
-            reality, it is very unlikely that anyindividual <br />
-            application would include all the features shown in a reference
-            architecture. The main purpose of reference
-            <br />
-            architectures is to evaluate and compare design proposals, and to
-            educate people about architectural <br />
-            characteristics in that domain.
-          </p>
-          <p>
-            <a
+
+
+
+
+<!--- MMMMMMM-->
+
+<div class="grid grid-cols-4 grid-rows-5 gap-2 p-4">
+  <div class="row-span-2 p-4 bg-white shadow rounded col-span-1 transition-transform duration-500 ease-in-out hover:rotate-[360deg]">
+    <h2 class="text-lg font-semibold mb-2">6.4.2 Information systems</h2>
+    <p>All systems that involve interaction with a shared database can be considered to be transaction-based information systems. An information system allows controlled access to a large base of information, such as a library catalog, a flight timetable, or the records of patients in a hospital. Increasingly, information systems are web-based systems that are accessed through a web browser.</p>
+  </div>
+
+  <div class="row-span-2 p-4 bg-white shadow rounded col-span-1 transition-transform duration-500 ease-in-out hover:rotate-[360deg]">
+    <p>Figure 6.16 shows a very general model of an information system. The system is modeled using a layered approach (discussed in Section 6.3) where the top layer supports the user interface and the bottom layer is the system database. The user communications layer handles all input and output from the user interface, and the information retrieval layer includes application-specific logic for accessing and updating the database. As we shall see later, the layers in this model can map directly onto servers in an Internet-based system.</p>
+  </div>
+
+  <div class="row-span-2 p-4 bg-white shadow rounded col-span-1 transition-transform duration-500 ease-in-out hover:rotate-[360deg]">
+    <ol class="list-decimal list-inside space-y-2">
+      <li>The top layer is responsible for implementing the user interface. In this case, the UI has been implemented using a web browser.</li>
+      <li>The second layer provides the user interface functionality that is delivered through the web browser. It includes components to allow users to log in to the system and checking components that ensure that the operations they use are allowed by their role. This layer includes form and menu management components that present information to users, and data validation components that check information consistency.</li>
+    </ol>
+  </div>
+
+  <div class="col-span-2 row-span-2 col-start-1 row-start-3 p-4 bg-white shadow rounded transition-transform duration-500 ease-in-out hover:rotate-[360deg]">
+    <p>As an example of an instantiation of this layered model, Figure 6.17 shows the architecture of the MHC-PMS. Recall that this system maintains and manages details of patients who are consulting specialist doctors about mental health problems.</p>
+    <img src="src/assets/img/iii.jpg" alt="" />
+    <p>We have added detail to each layer in the model by identifying the components that support user communications and information retrieval and access:</p>
+  </div>
+
+  <div class="row-span-2 col-start-4 row-start-1 p-4 bg-white shadow rounded transition-transform duration-500 ease-in-out hover:rotate-[360deg]">
+    <p>For example, e-commerce systems are Internet-based resource management systems that accept electronic orders for goods or services and then arrange delivery of these goods or services to the customer. In an e-commerce system, the application-specific layer includes additional functionality supporting a ‘shopping cart’ in which users can place a number of items in separate transactions, then pay for them all together in a single transaction.</p>
+  </div>
+
+  <div class="col-span-2 row-span-2 col-start-3 row-start-3 p-4 bg-white shadow rounded transition-transform duration-500 ease-in-out hover:rotate-[360deg]">
+    <ol start="3" class="list-decimal list-inside space-y-2">
+      <li>The third layer implements the functionality of the system and provides components that implement system security, patient information creation and updating, import and export of patient data from other databases, and report generators that create management reports.</li>
+      <img src="src/assets/img/bbb.jpg" alt="" />
+      <li>The lowest layer, which is built using a commercial database management system, provides transaction management and persistent data storage. Information and resource management systems are now usually web-based systems where the user interfaces are implemented using a web browser.</li>
+    </ol>
+  </div>
+
+  <div class="col-span-4 row-start-5 p-4 bg-white shadow rounded transition-transform duration-500 ease-in-out hover:rotate-[360deg]">
+    <p>The organization of servers in these systems usually reflects the four-layer generic model presented in Figure 6.16. These systems are often implemented as multi-tier client server architectures, as discussed in Chapter 18:</p>
+    <ul class="list-disc list-inside ml-4 space-y-1">
+      <li>The web server is responsible for all user communications, with the user interface implemented using a web browser.</li>
+      <li>The application server is responsible for implementing application-specific logic as well as information storage and retrieval requests.</li>
+      <li>The database server moves information to and from the database and handles transaction management.</li>
+    </ul>
+    <p class="mt-2">Using multiple servers allows high throughput and makes it possible to handle hundreds of transactions per minute. As demand increases, servers can be added at each level to cope with the extra processing involved.</p>
+  </div>
+</div>
+
+
+
+
+
+
+<!----PPPP-->
+
+<div class="max-w-4xl mx-auto p-6 bg-gray-50 text-gray-800 rounded-lg shadow-md leading-relaxed">
+  <h2 class="text-2xl font-bold mb-4">6.4.3 Language Processing Systems</h2>
+  <p class="mb-4">
+    Language processing systems translate a natural or artificial language into another representation of that language and, for programming languages, may also execute the resulting code. In software engineering, compilers translate an artificial programming language into machine code. Other language-processing systems may translate an XML data description into commands to query a database or to an alternative XML representation. Natural language processing systems may translate one natural language to another e.g., French to Norwegian.
+  </p>
+  <p>
+    A possible architecture for a language processing system for a programming language is illustrated in Figure 6.18. The source language instructions define the program to be executed and a translator converts these into instructions for an abstract machine. These instructions are then interpreted by another component that fetches the instructions for execution and executes them using (if necessary) data from the environment. The output of the process is the result of interpreting the instructions on the input data.
+    <img src="src/assets/img/lll.jpg" alt="" />
+  </p>
+</div>
+
+
+
+<!----RRRRRR-->
+
+<div class="p-6 bg-gray-50">
+  <div class="bg-white shadow-md rounded-lg p-6 border-l-4 border-blue-500 max-h-[600px] overflow-y-auto">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-4">Reference Architectures & Language Processing Systems</h2>
+    <p class="text-gray-800 text-sm whitespace-pre-line leading-relaxed">
+      References architectures
+      Reference architectures capture important features of system architectures in a domain. Essentially, they include
+      everything that might be in an application architecture although, in reality, it is very unlikely that any individual
+      application would include all the features shown in a reference architecture. The main purpose of reference
+      architectures is to evaluate and compare design proposals, and to educate people about architectural
+      characteristics in that domain.
+
+      <a
               href="http://www.SoftwareEngineering-9.com/Web/Architecture/RefArch.html"
             >
               <b
                 >http://www.SoftwareEngineering-9.com/Web/Architecture/RefArch.html</b
               ></a
             >
-          </p>
 
-          <p>
-            5. A semantic analyzer that uses information from the syntax tree
-            and the symbol <br />
-            table to check the semantic correctness of the input language text.
-          </p>
-          <p>
-            6. A code generator that ‘walks’ the syntax tree and generates
-            abstract machine code.
-          </p>
-          Other components might also be included which analyze and transform
-          the syn <br />
-          tax tree to improve efficiency and remove redundancy from the
-          generated machine <br />
-          code. In other types of language processing system, such as a natural
-          language trans <br />
-          lator, there will be additional components such as a dictionary, and
-          the generated <br />
-          code is actually the input text translated into another language.
-          <br />
-          There are alternative architectural patterns that may be used in a
-          language pro <br />
-          cessing system (Garlan and Shaw, 1993). Compilers can be implemented
-          using a <br />
-          composite of a repository and a pipe and filter model. In a compiler
-          architecture, the <br />
-          symbol table is a repository for shared data. The phases of lexical,
-          syntactic, and <br />
-          semantic analysis are organized sequentially, as shown in Figure 6.19,
-          and commu <br />
-          nicate through the shared symbol table. <br />
-          This pipe and filter model of language compilation is effective in
-          batch environ <br />
-          ments where programs are compiled and executed without user
-          interaction; for <br />
-          example, in the translation of one XML document to another. It is less
-          effective <br />
-          when a compiler is integrated with other language processing tools
-          such as a struc <br />
-          tured editing system, an interactive debugger or a program
-          prettyprinter. In this <br />
-          situation, changes from one component need to be reflected immediately
-          in other <br />
-          components. It is better, therefore, to organize the system around a
-          repository, as <br />
-          shown in Figure 6.20. <br />
-          This figure illustrates how a language processing system can be part
-          of an integrated <br />
-          set of programming support tools. In this example, the symbol table
-          and syntax tree act <br />
-          as a central information repository. Tools or tool fragments
-          communicate through it. <br />
-          Other information that is sometimes embedded in tools, such as the
-          grammar definition <br />
-          and the definition of the output format for the program, have been
-          taken out of the tools <br />
-          and put into the repository. Therefore, a syntax-directed editor can
-          check that the syntax <br />
-          of a program is correct as it is being typed and a prettyprinter can
-          create listings of the <br />
-          program in a format that is easy to read. <br />
+      5. A semantic analyzer that uses information from the syntax tree and the symbol
+      table to check the semantic correctness of the input language text.
 
-          <img src="src/assets/img/ppp.jpg" alt="" />
-        </article>
-      </div>
-    </section>
+      6. A code generator that ‘walks’ the syntax tree and generates abstract machine code.
 
-    <section>
-      <article>
-        <h2>Key Points</h2>
-        <ul>
-          <li>
-            A software architecture is a description of how a software system is
-            organized. Properties of a <br />
-            system such as performance, security, and availability are
-            influenced by the architecture used.
-          </li>
-          <br />
-          <li>
-            Architectural design decisions include decisions on the type of
-            application, the distribution of
-            <br />
-            the system, the architectural styles to be used, and the ways in
-            which the architecture should be
-            <br />
-            documented and evaluated.
-          </li>
-          <br />
-          <li>
-            Architectures may be documented from several different perspectives
-            or views. Possible views <br />
-            include a conceptual view, a logical view, a process view, a
-            development view, and a physical view.
-          </li>
-          <br />
-          <li>
-            Architectural patterns are a means of reusing knowledge about
-            generic system architectures. <br />
-            They describe the architecture, explain when it may be used, and
-            discuss its advantages and <br />
-            disadvantages.
-          </li>
-          <br />
-          <li>
-            Commonly used architectural patterns include Model-View-Controller,
-            Layered Architecture, <br />
-            Repository, Client–server, and Pipe and Filter.
-          </li>
-          <br />
-          <li>
-            Generic models of application systems architectures help us
-            understand the operation of <br />
-            applications, compare applications of the same type, validate
-            application system designs, and <br />
-            assess large-scale components for reuse.
-          </li>
-          <br />
-          <li>
-            Transaction processing systems are interactive systems that allow
-            information in a database to <br />
-            be remotely accessed and modified by a number of users. Information
-            systems and resource <br />
-            management systems are examples of transaction processing systems.
-          </li>
-          <br />
-          <li>
-            Language processing systems are used to translate texts from one
-            language into another and <br />
-            to carry out the instructions specified in the input language. They
-            include a translator and an <br />
-            abstract machine that executes the generated language. <br />
-          </li>
-        </ul>
-      </article>
-    </section>
+      Other components might also be included which analyze and transform the syntax tree to improve efficiency and remove redundancy from the generated machine code. In other types of language processing system, such as a natural language translator, there will be additional components such as a dictionary, and the generated code is actually the input text translated into another language.
+      There are alternative architectural patterns that may be used in a language processing system (Garlan and Shaw, 1993). Compilers can be implemented using a composite of a repository and a pipe and filter model. In a compiler architecture, the symbol table is a repository for shared data. The phases of lexical, syntactic, and semantic analysis are organized sequentially, as shown in Figure 6.19, and communicate through the shared symbol table.
+      This pipe and filter model of language compilation is effective in batch environments where programs are compiled and executed without user interaction; for example, in the translation of one XML document to another. It is less effective when a compiler is integrated with other language processing tools such as a structured editing system, an interactive debugger or a program prettyprinter. In this situation, changes from one component need to be reflected immediately in other components. It is better, therefore, to organize the system around a repository, as shown in Figure 6.20.
+      This figure illustrates how a language processing system can be part of an integrated set of programming support tools. In this example, the symbol table and syntax tree act as a central information repository. Tools or tool fragments communicate through it.
+      Other information that is sometimes embedded in tools, such as the grammar definition and the definition of the output format for the program, have been taken out of the tools and put into the repository. Therefore, a syntax-directed editor can check that the syntax of a program is correct as it is being typed and a prettyprinter can create listings of the program in a format that is easy to read.
+      <img src="src/assets/img/ppp.jpg" alt="" />
+    </p>
+  </div>
+</div>
 
-    <section>
-      <h2>FURTHER READING</h2>
 
-      <article>
-        <p>
-          Software Architecture: Perspectives on an Emerging Discipline. This
-          was the first book on <br />
-          software architecture and has a good discussion on different
-          architectural styles. (M. Shaw and <br />
-          D. Garlan, Prentice-Hall, 1996.)
-        </p>
-        Software Architecture in Practice, 2nd ed. This is a practical
-        discussion of software architectures that
+<!--lllllllllll-->
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 grid-rows-6 gap-2 p-4">
+  <!-- Right panel now on the left -->
+  <div class="col-span-1 sm:col-span-2 row-span-6 lg:col-start-1 overflow-y-auto p-4 bg-white rounded shadow max-h-[80vh]">
+    <h2 class="text-2xl font-bold mb-4">Key Points</h2>
+    <ul class="list-disc list-inside space-y-4 text-gray-800 text-sm leading-relaxed mb-8">
+      <li>
+        A software architecture is a description of how a software system is organized.
+        Properties of a system such as performance, security, and availability are influenced by the architecture used.
+      </li>
+      <li>
+        Architectural design decisions include decisions on the type of application, the distribution of the system,
+        the architectural styles to be used, and the ways in which the architecture should be documented and evaluated.
+      </li>
+      <li>
+        Architectures may be documented from several different perspectives or views.
+        Possible views include a conceptual view, a logical view, a process view, a development view, and a physical view.
+      </li>
+      <li>
+        Architectural patterns are a means of reusing knowledge about generic system architectures.
+        They describe the architecture, explain when it may be used, and discuss its advantages and disadvantages.
+      </li>
+      <li>
+        Commonly used architectural patterns include Model-View-Controller, Layered Architecture,
+        Repository, Client–server, and Pipe and Filter.
+      </li>
+      <li>
+        Generic models of application systems architectures help us understand the operation of applications,
+        compare applications of the same type, validate application system designs,
+        and assess large-scale components for reuse.
+      </li>
+      <li>
+        Transaction processing systems are interactive systems that allow information in a database to be remotely accessed
+        and modified by a number of users. Information systems and resource management systems are examples of transaction processing systems.
+      </li>
+      <li>
+        Language processing systems are used to translate texts from one language into another and to carry out the instructions
+        specified in the input language. They include a translator and an abstract machine that executes the generated language.
+      </li>
+    </ul>
+
+    
+  </div>
+
+  <!-- Left panel now on the right -->
+  <div class="col-span-1 sm:col-span-2 row-span-6 lg:col-start-3 bg-gray-100 p-4 rounded shadow">
+    <h2 class="text-2xl font-bold mb-4">FURTHER READING</h2>
+    <article class="space-y-4 text-gray-700 text-sm leading-relaxed">
+      <p>
+        <strong>Software Architecture: Perspectives on an Emerging Discipline.</strong> This was the first book on software architecture and has a good discussion on different architectural styles. (M. Shaw and D. Garlan, Prentice-Hall, 1996.)
+      </p>
+      <p>
+        <strong>Software Architecture in Practice, 2nd ed.</strong> This is a practical discussion of software architectures that does not oversell the benefits of architectural design. It provides a clear business rationale explaining why architectures are important. (L. Bass, P. Clements and R. Kazman, Addison-Wesley, 2003.)
+      </p>
+      <p>
+        <strong>‘The Golden Age of Software Architecture’.</strong> This paper surveys the development of software architecture from its beginnings in the 1980s through to its current usage. There is little technical content but it is an interesting historical overview. (M. Shaw and P. Clements, IEEE Software, 21 (2), March–April 2006.)
         <br />
-        <p>
-          does not oversell the benefits of architectural design. It provides a
-          clear business rationale <br />
-          explaining why architectures are important. (L. Bass, P. Clements and
-          R. Kazman, Addison-Wesley, <br />
-          2003.)
-        </p>
-        <p>
-          ‘The Golden Age of Software Architecture’This paper surveys the
-          development of software <br />
-          architecture from its beginnings in the 1980s through to its current
-          usage. There is little technical <br />
-          content but it is an interesting historical overview. (M. Shaw and P.
-          Clements, IEEE Software, <br />
-          21 (2), March–April 2006.)
-          <a href="http://dx.doi.org/10.1109/MS.2006.58"
-            >http://dx.doi.org/10.1109/MS.2006.58</a
-          >.
-        </p>
-        <p>
-          Handbook of Software Architecture. This is a work in progress by Grady
-          Booch, one of the <br />
-          early evangelists for software architecture. He has been documenting
-          the architectures of a range of <br />
-          software systems so you can see reality rather than academic
-          abstraction. Available on the Web and <br />
-          intended to appear as a book.
-          <a href="http://www.handbookofsoftwarearchitecture.com/"
-            >http://www.handbookofsoftwarearchitecture.com/</a
-          >.
-        </p>
-      </article>
-    </section>
+        <a href="http://dx.doi.org/10.1109/MS.2006.58" class="text-blue-600 underline">http://dx.doi.org/10.1109/MS.2006.58</a>
+      </p>
+      <p>
+        <strong>Handbook of Software Architecture.</strong> This is a work in progress by Grady Booch, one of the early evangelists for software architecture. He has been documenting the architectures of a range of software systems so you can see reality rather than academic abstraction. Available on the Web and intended to appear as a book.
+        <br />
+        <a href="http://www.handbookofsoftwarearchitecture.com/" class="text-blue-600 underline">http://www.handbookofsoftwarearchitecture.com/</a>
+      </p>
+    </article>
+  </div>
+</div>
 
-    <section>
-      <h2>EXERCISES</h2>
 
-      <article>
-        <ol start="6">
-          <li>
-            1 When describing a system, explain why you may have to design the
-            system architecture <br />
-            before the requirements specification is complete.
-          </li>
-        </ol>
-        <ol start="6">
-          <li>
-            2 You have been asked to prepare and deliver a presentation to a
-            non-technical manager to <br />
-            justify the hiring of a system architect for a new project. Write a
-            list of bullet points setting out <br />
-            the key points in your presentation. Naturally, you have to explain
-            what is meant by system <br />
-            architecture.
-          </li>
-        </ol>
+<!---GGGGGG-->
 
-        <ol start="6">
-          <li>
-            3 Explain why design conflicts might arise when designing an
-            architecture for which <br />
-            both availability and security requirements are the most important
-            non-functional <br />
-            requirements.
-          </li>
-        </ol>
+<!-- Heading -->
+<div class="text-2xl font-bold text-gray-800 mb-4 px-4">EXERCISES</div>
 
-        <ol start="6">
-          <li>
-            4 Draw diagrams showing a conceptual view and a process view of the
-            architectures of the <br />
-            following systems: <br />
-            An automated ticket-issuing system used by passengers at a railway
-            station. <br />
-            A computer-controlled video conferencing system that allows video,
-            audio, and computer data <br />
-            to be visible to several participants at the same time. <br />
-            A robot floor cleaner that is intended to clean relatively clear
-            spaces such as corridors. The <br />
-            cleaner must be able to sense walls and other obstructions.
-          </li>
-        </ol>
+<!-- Grid Container -->
+<div class="grid gap-2 px-4
+            grid-cols-1
+            sm:grid-cols-2 sm:grid-rows-none
+            md:grid-cols-3
+            lg:grid-cols-5 lg:grid-rows-5">
 
-        <ol start="6">
-          <li>
-            5 Explain why you normally use several architectural patterns when
-            designing the architecture <br />
-            of a large system. Apart from the information about patterns that I
-            have discussed in this <br />
-            chapter, what additional information might be useful when designing
-            large systems?
-          </li>
+  <div class="bg-gray-100 p-4 rounded-lg shadow-md hover:bg-blue-300 transition">1. When describing a system, explain why you may have to design the system architecture before the requirements specification is complete.</div>
 
-          <li>
-            6 Suggest an architecture for a system (such as iTunes) that is used
-            to sell and distribute music
-            <br />
-            on the Internet. What architectural patterns are the basis for this
-            architecture?
-          </li>
+  <div class="bg-gray-100 p-4 rounded-lg shadow-md hover:bg-blue-300 transition lg:col-span-4">
+    2. You have been asked to prepare and deliver a presentation to a non-technical manager to justify the hiring of a system architect for a new project. Write a list of bullet points setting out the key points in your presentation. Naturally, you have to explain what is meant by system architecture.
+  </div>
 
-          <li>
-            7 Explain how you would use the reference model of CASE environments
-            (available on the <br />
-            book’s web pages) to compare the IDEs offered by different vendors
-            of a programming <br />
-            language such as Java.
-          </li>
+  <div class="bg-gray-100 p-4 rounded-lg shadow-md hover:bg-blue-300 transition lg:row-span-2 lg:row-start-2">
+    3. Explain why design conflicts might arise when designing an architecture for which both availability and security requirements are the most important non-functional requirements.
+  </div>
 
-          <li>
-            8 Using the generic model of a language processing system presented
-            here, design the <br />
-            architecture of a system that accepts natural language commands and
-            translates these into <br />
-            database queries in a language such as SQL.
-          </li>
+  <div class="bg-gray-100 p-4 rounded-lg shadow-md hover:bg-blue-300 transition lg:col-span-2 lg:row-span-2 lg:row-start-2">
+    4. Draw diagrams showing a conceptual view and a process view of the architectures of the following systems:
+    <ul class="list-disc ml-4 mt-2">
+      <li>An automated ticket-issuing system used by passengers at a railway station.</li>
+      <li>A computer-controlled video conferencing system that allows video, audio, and computer data to be visible to several participants at the same time.</li>
+      <li>A robot floor cleaner that is intended to clean relatively clear spaces such as corridors. The cleaner must be able to sense walls and other obstructions.</li>
+    </ul>
+  </div>
 
-          <li>
-            9 Using the basic model of an information system, as presented in
-            Figure 6.16, suggest the <br />
-            components that might be part of an information system that allows
-            users to view information <br />
-            about flights arriving and departing from a particular airport.
-          </li>
+  <div class="bg-gray-100 p-4 rounded-lg shadow-md hover:bg-blue-300 transition lg:row-span-2 lg:col-start-4 lg:row-start-2">
+    5. Explain why you normally use several architectural patterns when designing the architecture of a large system. Apart from the information about patterns that I have discussed in this chapter, what additional information might be useful when designing large systems?
+  </div>
 
-          <li>
-            10 Should there be a separate profession of ‘software architect’
-            whose role is to work <br />
-            independently with a customer to design the software system
-            architecture? A separate <br />
-            software company would then implement the system. What might be the
-            difficulties of <br />
-            establishing such a profession?
-          </li>
-        </ol>
-      </article>
-    </section>
+  <div class="bg-gray-100 p-4 rounded-lg shadow-md hover:bg-blue-300 transition lg:row-span-2 lg:col-start-5 lg:row-start-2">
+    6. Suggest an architecture for a system (such as iTunes) that is used to sell and distribute music on the Internet. What architectural patterns are the basis for this architecture?
+  </div>
+
+  <div class="bg-gray-100 p-4 rounded-lg shadow-md hover:bg-blue-300 transition lg:row-span-2 lg:row-start-4">
+    7. Explain how you would use the reference model of CASE environments (available on the book’s web pages) to compare the IDEs offered by different vendors of a programming language such as Java.
+  </div>
+
+  <div class="bg-gray-100 p-4 rounded-lg shadow-md hover:bg-blue-300 transition lg:col-span-2 lg:row-span-2 lg:row-start-4">
+    8. Using the generic model of a language processing system presented here, design the architecture of a system that accepts natural language commands and translates these into database queries in a language such as SQL.
+  </div>
+
+  <div class="bg-gray-100 p-4 rounded-lg shadow-md hover:bg-blue-300 transition lg:row-span-2 lg:col-start-4 lg:row-start-4">
+    9. Using the basic model of an information system, as presented in Figure 6.16, suggest the components that might be part of an information system that allows users to view information about flights arriving and departing from a particular airport.
+  </div>
+
+  <div class="bg-gray-100 p-4 rounded-lg shadow-md hover:bg-blue-300 transition lg:row-span-2 lg:col-start-5 lg:row-start-4">
+    10. Should there be a separate profession of ‘software architect’ whose role is to work independently with a customer to design the software system architecture? A separate software company would then implement the system. What might be the difficulties of establishing such a profession?
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+   
   </body>
 
-  <footer>
-    <section>
-      <h2>REFERENCES</h2>
-      <article>
-        Bass, L., Clements, P. and Kazman, R. (2003). Software Architecture in
-        Practice, 2nd ed. Boston: <br />
-        Addison-Wesley. Berczuk, S. P. and Appleton, B. (2002). Software
-        Configuration Management Patterns: Effective <br />
-        Teamwork, Practical Integration. Boston: Addison-Wesley. Booch, G.
-        (2009). ‘Handbook of software architecture’. Web publication. <br />
-        http://www.handbookofsoftwarearchitecture.com/. Bosch, J. (2000). Design
-        and Use of Software Architectures. Harlow, UK: Addison-Wesley.
-        Buschmann, F., Henney, K. and Schmidt, D. C. (2007a). Pattern-oriented
-        Software Architecture <br />
-        Volume 4: A Pattern Language for Distributed Computing. New York: John
-        Wiley & Sons. Buschmann, F., Henney, K. and Schmidt, D. C. (2007b).
-        Pattern-oriented Software Architecture <br />
-        Volume 5: On Patterns and Pattern Languages. New York: John Wiley &
-        Sons. Buschmann, F., Meunier, R., Rohnert, H. and Sommerlad, P. (1996).
-        Pattern-oriented Software <br />
-        Architecture Volume 1: A System of Patterns. New York: John Wiley & Sons
-        Clements, P., Bachmann, F., Bass, L., Garlan, D., Ivers, J., Little, R.,
-        Nord, R. and Stafford, J. (2002).
-        <br />
-        Documenting Software Architectures: Views and Beyond. Boston:
-        Addison-Wesley. Coplien, J. H. and Harrison, N. B. (2004).
-        Organizational Patterns of Agile Software Development. <br />
-        Englewood Cliffs, NJ: Prentice Hall. Gamma, E., Helm, R., Johnson, R.
-        and Vlissides, J. (1995). Design Patterns: Elements of Reusable <br />
-        Object-Oriented Software. Reading, Mass.: Addison-Wesley. Garlan, D. and
-        Shaw, M. (1993). ‘An introduction to software architecture’. Advances in
-        Software <br />
-        Engineering and Knowledge Engineering, 1 1–39. Harold, E. R. and Means,
-        W. S. (2002). XML in a Nutshell. Sebastopol. Calif.: O‘Reilly.
-        Hofmeister, C., Nord, R. and Soni, D. (2000). Applied Software
-        Architecture. Boston: Addison <br />
-        Wesley. Hunter, D., Rafter, J., Fawcett, J. and Van Der Vlist, E.
-        (2007). Beginning XML, 4th ed. Indianapolis, <br />
-        Ind.: Wrox Press. Kircher, M. and Jain, P. (2004). Pattern-Oriented
-        Software Architecture Volume 3: Patterns for <br />
-        Resource Management. New York: John Wiley & Sons. Krutchen, P. (1995).
-        ‘The 4+1 view model of software architecture’. IEEE Software, 12 (6),
-        42–50. Lange, C. F. J., Chaudron, M. R. V. and Muskens, J. (2006). ‘UML
-        software description and <br />
-        architecture description’. IEEE Software, 23 (2), 40–6. Lewis, P. M.,
-        Bernstein, A. J. and Kifer, M. (2003). Databases and Transaction
-        Processing: An <br />
-        Application-oriented Approach. Boston: Addison-Wesley. Martin, D. and
-        Sommerville, I. (2004). ‘Patterns of interaction: Linking
-        ethnomethodology and <br />
-        design’. ACM Trans. on Computer-Human Interaction, 11 (1), 59–89. Nii,
-        H. P. (1986). ‘Blackboard systems, parts 1 and 2’. AI Magazine, 7 (3 and
-        4), 38–53 and 62–9. Schmidt, D., Stal, M., Rohnert, H. and Buschmann, F.
-        (2000). Pattern-Oriented Software <br />
-        Architecture Volume 2: Patterns for Concurrent and Networked Objects.
-        New York: John Wiley & <br />
-        Sons.
-        <p>
-          Shaw, M. and Garlan, D. (1996). Software Architecture: Perspectives on
-          an Emerging Discipline. Englewood Cliffs, NJ: Prentice Hall. <br />
-          Usability group. (1998). ‘Usability patterns’. Web publication. <br />
-          <a href="http://www.it.bton.ac.uk/cil/usability/patterns/"
-            >http://www.it.bton.ac.uk/cil/usability/patterns/</a
-          >.
-        </p>
-      </article>
-    </section>
-  </footer>
+  <footer class="footer-container">
+      <div class="footer-div1">
+        <div class="footer-container1">
+          <img
+            class="h-25 w-25 max-[1160px]:h-20 max-[1160px]:w-20 max-[1030px]:h-15 max-[1030px]:w-15 max-[810px]:h-10 max-[810px]:w-10 max-[540px]:h-8 max-[540px]:w-8 max-[425px]:h-5 max-[425px]:w-5"
+            src="/src/assets/img/logo.png"
+            alt=" "
+          />
+          <h1>Architectural Design</h1>
+        </div>
+        <div>
+          <h3>NAME</h3>
+          <p>Andaya, Ronmel D.</p>
+          <p>Carbonilla, Marjorie B.</p>
+          <p>Casanova, Johnharry S.</p>
+          <p>De Los Santos, Maricar R.</p>
+        </div>
+        <div>
+          <h3>CONTACTS</h3>
+          <p>andayaronmel@gmail.com</p>
+          <p>carbonillamarjorie@gmail.com</p>
+          <p>casanovajohnharry@gmail.com</p>
+          <p>delossantosmaricar@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-div2">
+        <h1>@HARRYSORT - BS INFORMATION TECHNOLOGY</h1>
+        <div class="flex items-center gap-4">
+          <div>
+            <img class="footer-img" src="/src/assets/img/ig-icon.png" alt="" />
+          </div>
+          <div>
+            <img
+              class="footer-img"
+              src="/src/assets/img/icon-facebook.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="footer-img"
+              src="/src/assets/img/icon-twitter.png"  
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
 </html>

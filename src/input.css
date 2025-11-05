@@ -797,3 +797,25 @@ body {
 
 
 /* chapter 6.2 */
+
+
+
+/* chapter 6.4 */
+.chapter_6-4_main{
+  @apply px-20 py-10;
+}
+
+.chapter_6-4_div1{
+  @apply px-20 py-10 rounded-2xl shadow-xl border-t-2 border-[var(--primary-color)];
+}
+
+.chapter_6-4_div1 > h2{
+  @apply text-[3rem] uppercase font-quano text-[var(--primary-color)];
+}
+ 
+.chapter_6-4_div1 > div{
+  @apply text-[1.1rem] text-justify indent-10;
+}
+
+/* chapter 6.4 */
+
